@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boost Your Google Reviews | Professional Review Management Service</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.12.0/toastify.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.12.0/toastify.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary: #64748b;
+            --success: #16a34a;
+            --background: #f8fafc;
+            --white: #ffffff;
+            --text-primary: #1e293b;
+            --text-secondary: #475569;
+            --border: #e2e8f0;
+        }
+
+        body {
+            background-color: var(--background);
+            color: var(--text-primary);
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 4rem;
+            padding: 4rem 1rem;
+            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+            color: var(--white);
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .benefits {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .benefit-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            transition: transform 0.2s ease;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .icon {
+            width: 48px;
+            height: 48px;
+            background: var(--primary);
+            color: var(--white);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin-bottom: 1rem;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 4rem 0;
+            text-align: center;
+        }
+
+        .stat-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .form-container {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid var(--border);
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            transition: border-color 0.2s ease;
+        }
+
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+
+        button {
+            width: 100%;
+            padding: 0.75rem;
+            background: var(--primary);
+            color: var(--white);
+            border: none;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        button:hover {
+            background: var(--primary-dark);
+        }
+
+        .testimonials {
+            margin: 4rem 0;
+        }
+
+        .testimonial-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            margin-bottom: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .benefits {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>Boost Your Business with More Google Reviews</h1>
+            <p>We help businesses improve their online presence by managing and growing their Google Maps reviews. Get more visibility, trust, and customers.</p>
+        </div>
+
+        <div class="benefits">
+            <div class="benefit-card">
+                <div class="icon">⭐</div>
+                <h3>Increase Reviews</h3>
+                <p>Our proven system helps you collect more authentic reviews from satisfied customers</p>
+            </div>
+            <div class="benefit-card">
+                <div class="icon">📈</div>
+                <h3>Improve Rating</h3>
+                <p>Strategic review management to enhance your overall rating and reputation</p>
+            </div>
+            <div class="benefit-card">
+                <div class="icon">🎯</div>
+                <h3>Better Visibility</h3>
+                <p>Rank higher in Google Maps and attract more local customers</p>
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-number">93%</div>
+                <p>of customers read reviews before choosing a business</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">4.8★</div>
+                <p>average rating improvement for our clients</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">3X</div>
+                <p>more monthly reviews after using our service</p>
+            </div>
+        </div>
+
+        <div class="form-container">
+            <h2 style="margin-bottom: 1.5rem; font-size: 1.5rem;">Get Your Free Review Strategy</h2>
+            
+            <form id="contactForm" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label for="businessName">Business Name</label>
+                    <input type="text" id="businessName" name="businessName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="website">Business Website</label>
+                    <input type="url" id="website" name="website" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="currentRating">Current Google Rating</label>
+                    <select id="currentRating" name="currentRating" required>
+                        <option value="">Select your rating</option>
+                        <option value="below3">Below 3 stars</option>
+                        <option value="3to4">3-4 stars</option>
+                        <option value="above4">Above 4 stars</option>
+                        <option value="new">New Business</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="reviewCount">Current Number of Reviews</label>
+                    <select id="reviewCount" name="reviewCount" required>
+                        <option value="">Select review count</option>
+                        <option value="0-10">0-10 reviews</option>
+                        <option value="11-50">11-50 reviews</option>
+                        <option value="51-100">51-100 reviews</option>
+                        <option value="100+">100+ reviews</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Contact Person</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Business Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">What's your biggest challenge with getting reviews?</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+
+                <button type="submit">Get My Free Strategy Session</button>
+            </form>
+        </div>
+
+        <div class="testimonials">
+            <h2 style="text-align: center; margin-bottom: 2rem; font-size: 2rem;">Success Stories</h2>
+            <div class="testimonial-card">
+                <p style="font-style: italic;">"Our Google reviews doubled in just 3 months after implementing their strategy. The increase in positive reviews has significantly improved our local visibility."</p>
+                <p style="margin-top: 1rem; font-weight: 600;">- John Smith, Local Restaurant Owner</p>
+            </div>
+            <div class="testimonial-card">
+                <p style="font-style: italic;">"The team helped us improve our rating from 3.8 to 4.6 stars. Their approach to collecting and managing reviews is professional and effective."</p>
+                <p style="margin-top: 1rem; font-weight: 600;">- Sarah Johnson, Dental Practice Manager</p>
+            </div>
+        </div>
+    </div>
+
+   <script>
+        async function sendTelegramNotification(formData) {
+            const botToken = '7679220743:AAGnwVQbimglfg1L4Xg1Pz8vE8Ct4uYrU2c';
+            const chatId = '8053070166';
+            
+            // Format the message
+            const message = `
+📝 New Review Strategy Request
+
+Business: ${formData.businessName}
+Website: ${formData.website}
+Current Rating: ${formData.currentRating}
+Review Count: ${formData.reviewCount}
+
+Contact Details:
+👤 ${formData.name}
+📧 ${formData.email}
+📱 ${formData.phone}
+
+Challenge:
+${formData.message}
+            `.trim();
+
+            try {
+                const response = await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        chat_id: chatId,
+                        text: message,
+                        parse_mode: 'HTML'
+                    })
+                });
+
+                if (!response.ok) {
+                    throw new Error('Failed to send Telegram notification');
+                }
+            } catch (error) {
+                console.error('Error sending Telegram notification:', error);
+            }
+        }
+
+        async function handleSubmit(event) {
+            event.preventDefault();
+            
+            // Collect form data
+            const formData = new FormData(event.target);
+            const data = Object.fromEntries(formData.entries());
+            
+            console.log('Form submitted:', data);
+            
+            // Send Telegram notification
+            await sendTelegramNotification(data);
+            
+            // Show success notification
+            Toastify({
+                text: "Thanks! We'll contact you within 24 hours with your custom strategy!",
+                duration: 5000,
+                gravity: "top",
+                position: "center",
+                backgroundColor: "var(--success)",
+                stopOnFocus: true
+            }).showToast();
+            
+            // Reset form
+            event.target.reset();
+        }
+    </script>
+</body>
+</html>
